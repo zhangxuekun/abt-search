@@ -1,0 +1,19 @@
+{
+  "name": "abt-search",
+  "description": "ABT Search Node for blocklet project",
+  "version": "1.0.0",
+  "group": "dapp",
+  "color": "primary",
+  "main": "app.js",
+  "provider": "community",
+  "keywords": ["search"],
+  "author": "zhangxuekun",
+  "public_url": " ",
+  "admin_url": "",
+  "config_url": "",
+  "doc_url": "",
+  "hooks": {
+    "post-copy": "npm install"
+  }
+
+}
