@@ -16,6 +16,8 @@ app.use('/',express.static(path.join(__dirname,".",'build')));
 app.use('/',express.static(path.join(__dirname,".",'static')));
 app.post("/search", function (req, res) {
 
+  console.log(req.body); 
+  res.send('test');
     
 });
 //引入route模块
@@ -49,11 +51,5 @@ app.get("/search", function (req, res) {
 
 });
 
-
-app.post('/a',(req,res) => {
-    console.log(req.body); //{ name: '小荟', year: '3' }
-    res.send('xiaohui');
-});
 const PORT = process.env.BLOCKLET_PORT|| 3001;
-
 app.listen(PORT);
